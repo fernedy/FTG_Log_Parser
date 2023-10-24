@@ -1,0 +1,2 @@
+date,time,logid,type,subtype,level,vd,eventtime,srcip,srcport,srcintf,srcintfrole,dstip,dstport,dstintf,dstintfrole,sessionid,proto,action,policyid,policytype,service,dstcountry,srccountry,trandisp,duration,sentbyte,rcvdbyte,sentpkt,rcvdpkt,appcat
+2019-05-10,11:50:48,0001000014,traffic,local,notice,vdom1,1557514248379911176,172.16.200.254,62024,port11,undefined,172.16.200.2,443,vdom1,undefined,107478,6,server-rst,0,local-in-policy,HTTPS,Reserved,Reserved,noop,5,1247,1719,5,6,unscanned

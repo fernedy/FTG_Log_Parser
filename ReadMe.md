@@ -29,9 +29,15 @@ Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` 
 ## Autor
 - Darlyn Fernedy González Arias
 
+## Fuente
+[Documentación Oficial Fortinet](https://docs.fortinet.com/document/fortigate/6.2.15/cookbook/986892/sample-logs-by-log-type)
 
 ## Capturas de Pantalla
-[Si es relevante, puedes incluir capturas de pantalla para mostrar la interfaz o ejemplos de uso.]
+- Vista de la Aplicación
+![Vista de la Aplicación](./Screenshoot/ScreenNo1.png)
+- Archivo resultante
+![Vista de la Aplicación](./Screenshoot/ScreenNo2.png)
+- 
 
 ---
 
