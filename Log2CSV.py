@@ -2,9 +2,9 @@ import csv  # Importa la biblioteca CSV para trabajar con archivos CSV.
 import re  # Importa la biblioteca de expresiones regulares para buscar patrones en el texto.
 import codecs  # Importa la biblioteca codecs para manejar diferentes codificaciones de caracteres.
 import os  # Importa el módulo 'os' para acceder a funcionalidades relacionadas con el sistema operativo,
-
-
 # como la manipulación de rutas de archivos y directorios, gestión de variables de entorno y más.
+from ColorText import ColorText # Importa la clase 'ColorText' desde el módulo 'ColorText' para habilitar el cambio
+# de colores de texto en la consola.
 
 
 class Log2CSV:
@@ -13,6 +13,7 @@ class Log2CSV:
         self.events = []
         self.headers = []
         self.current_directory = set()
+        self.color_msj = set()
 
     def procesar_registros(self):
         try:
@@ -31,7 +32,8 @@ class Log2CSV:
                     self.events.append(event)  # Agrega el diccionario 'event' a la lista 'events'.
 
         except Exception as e:
-            raise Exception(f"Error al leer o procesar el archivo de registros: {str(e)}")
+            self.color_msj = ColorText(f"Error al leer o procesar el archivo de registros: {str(e)}", "31")
+            raise Exception(self.color_msj.cambiar_color())
 
     def escribir_csv(self):
         try:
@@ -49,8 +51,13 @@ class Log2CSV:
                 csvfile.writeheader()  # Escribe los encabezados en el archivo CSV.
                 for row in self.events:
                     csvfile.writerow(row)  # Escribe los datos en el archivo CSV.
-            print(f"[+] Finalizado - {str(len(self.events))} filas escritas en {newFile}")
+            self.color_msj = ColorText(f"[+] Finalizado - {str(len(self.events))} filas escritas en {newFile}", "32")
+            print(f"{self.color_msj.cambiar_color()}")
             print(f"[+] Ubicación del Archivo: {self.current_directory}")
 
         except Exception as e:
-            raise Exception(f"Error al escribir en el archivo CSV: {str(e)}")
+            self.color_msj = ColorText(f"Error al escribir en el archivo CSV: {str(e)}", "31")
+            raise Exception(self.color_msj.cambiar_color())
+
+
+
