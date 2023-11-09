@@ -13,7 +13,7 @@ FTG_Log_Parser es una herramienta que te permite analizar registros de log gener
 3. Ejecuta el archivo `main.py`.
 
 ### Ejemplo de Uso
-1. Copia el archivo que deseas convertir en el folder Log
+1. Copia el archivo que deseas convertir en el folder con nombre Log
 2. Ejecuta el archivo `main.py`.
 3. Ingresa el nombre del archivo de log que deseas procesar.
 4. La herramienta procesará los registros y generará un archivo CSV con los datos.
@@ -37,7 +37,7 @@ Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` 
 ![Vista de la Aplicación](./Screenshoot/ScreenNo1.png)
 - Archivo resultante
 ![Vista de la Aplicación](./Screenshoot/ScreenNo2.png)
-- 
+
 
 ---
 

@@ -1,3 +1,32 @@
+# Clase Log2CSV: Esta clase se utiliza para procesar archivos de registros y convertirlos en archivos CSV.
+
+# Importación de bibliotecas: - csv: Utilizada para trabajar con archivos CSV. - re: Utilizada para buscar patrones
+# en el texto a través de expresiones regulares. - codecs: Utilizada para manejar diferentes codificaciones de
+# caracteres en el archivo. - os: Utilizada para operaciones relacionadas con el sistema operativo,
+# como la manipulación de rutas de archivos y directorios.
+
+# Importación de la clase 'ColorText' desde el módulo 'ColorText' para habilitar el cambio de colores de texto en la
+# consola.
+
+# Constructor (__init__): - Recibe el parámetro 'fileName', que es el nombre del archivo de registros que se
+# procesará. - Inicializa varios atributos para almacenar información procesada y controlar la ubicación del archivo
+# CSV resultante.
+
+# Método procesar_registros: - Este método se encarga de procesar el archivo de registros. Abre el archivo,
+# busca patrones en el texto y crea un diccionario para cada evento registrado. - Los eventos se almacenan en una
+# lista llamada 'events'. - Cualquier error durante el procesamiento se captura y se lanza una excepción.
+
+# Método escribir_csv: - Este método se encarga de escribir los registros procesados en un archivo CSV. - Itera a
+# través de los diccionarios de eventos para compilar una lista única de encabezados. - Luego, crea un nuevo archivo
+# CSV y escribe los encabezados y datos en él. - Muestra un mensaje de finalización con información sobre el número
+# de filas escritas y la ubicación del archivo CSV resultante. - Captura y maneja cualquier error que pueda ocurrir
+# durante la escritura.
+
+# Nota: La clase utiliza la biblioteca 'ColorText' para resaltar mensajes en colores en la consola.
+
+# Ejemplo de uso: Para utilizar esta clase, se debe crear una instancia de 'Log2CSV' con el nombre del archivo de
+# registros y luego llamar a los métodos 'procesar_registros' y 'escribir_csv' para realizar la conversión a CSV.
+
 import csv  # Importa la biblioteca CSV para trabajar con archivos CSV.
 import re  # Importa la biblioteca de expresiones regulares para buscar patrones en el texto.
 import codecs  # Importa la biblioteca codecs para manejar diferentes codificaciones de caracteres.
