@@ -1,6 +1,6 @@
-# FTG_Log_Parser
+# Fortigate Log Parser
 
-FTG_Log_Parser es una herramienta que te permite analizar registros de log generados por Fortigate y convertirlos en archivos CSV. Puedes utilizar esta herramienta para procesar registros y extraer información relevante de una manera eficiente.
+Fortigate Log Parser es una herramienta que te permite analizar registros de log generados por Fortigate y convertirlos en archivos CSV. Puedes utilizar esta herramienta para procesar registros y extraer información relevante de una manera eficiente.
 
 ## Instrucciones de Uso
 
