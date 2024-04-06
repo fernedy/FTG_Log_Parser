@@ -41,5 +41,5 @@ Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` 
 
 ---
 
-¡Esperamos que Fortigate Log Parser te sea útil! Si tienes alguna pregunta o encuentras algún problema, no dudes en comunicarte con nosotros.
+¡Espero que Fortigate Log Parser te sea útil! Si tienes alguna pregunta o encuentras algún problema, no dudes en comunicarte con nosotros.
 
